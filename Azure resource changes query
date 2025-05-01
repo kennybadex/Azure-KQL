@@ -1,0 +1,17 @@
+resourcechanges
+| extend parsed = parse_json(properties)
+| extend
+    clientType = properties.changeAttributes.clientType,
+    changeTime = todatetime (parsed.changeAttributes.timestamp),
+    targetResourceType = tostring(parsed.targetResourceType),
+    targetResourceId = tostring(parsed.targetResourceId),
+    changeType = tostring(parsed.changeType),
+    previousSnapshotId = tostring(parsed.changeAttributes.previousResourceSnapshotId),
+    newSnapshotId = tostring(parsed.changeAttributes.newResourceSnapshotId),
+    changedBy = tostring(parsed.changeAttributes.changedBy),
+    //timestamp = tostring(parsed.changeAttributes.timestamp),
+    previousValue = tostring(parsed.changes["properties.defaultOutboundConnectivityEnabled"].previousValue),
+    newValue = tostring(parsed.changes["properties.defaultOutboundConnectivityEnabled"].newValue)
+| extend resourceId = tostring(split(targetResourceId, "/")[array_length(split(targetResourceId, "/")) - 1])
+| where changeTime > ago(7d)
+| project changeTime, changeType, clientType, changedBy, previousValue, newValue, resourceId
