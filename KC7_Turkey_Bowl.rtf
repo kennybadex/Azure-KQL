@@ -1,0 +1,452 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red255\green255\blue254;\red191\green28\blue37;
+\red19\green13\blue93;\red0\green0\blue0;\red133\green16\blue192;\red252\green44\blue7;\red184\green0\blue114;
+\red160\green17\blue26;\red15\green112\blue1;\red37\green127\blue159;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c100000;\cssrgb\c100000\c100000\c99608;\cssrgb\c80392\c19216\c19216;
+\cssrgb\c9804\c9804\c43922;\cssrgb\c0\c0\c0;\cssrgb\c60000\c19608\c80000;\cssrgb\c100000\c27059\c0;\cssrgb\c78039\c8235\c52157;
+\cssrgb\c69804\c13333\c13333;\cssrgb\c0\c50196\c0;\cssrgb\c16863\c56863\c68627;}
+\margl1440\margr1440\vieww23660\viewh26440\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 let\cf4 \strokec4  \cf5 \strokec5 dill\cf4 \strokec4  \cf0 \strokec6 =\cf4 \strokec4  \cf7 \strokec7 Employees\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 role\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "Lead Coach"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 project\cf4 \strokec4  \cf9 \strokec9 email_addr\cf0 \strokec6 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 Email\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 recipient\cf4 \strokec4  \cf2 \strokec2 in\cf4 \strokec4  \cf0 \strokec6 (\cf5 \strokec5 dill\cf0 \strokec6 )\cb1 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 count\cf4 \strokec4  \cf0 \cb1 \strokec6 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 Employees\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 take\cf4 \strokec4  \cf0 \strokec6 10\cf4 \strokec4  \cf0 \cb1 \strokec6 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  \cf5 \strokec5 Ox\cf0 \strokec6 =\cf4 \strokec4  \cf7 \strokec7 Employees\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 distinct\cf4 \strokec4  \cf9 \strokec9 email_addr\cf0 \strokec6 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 Email\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 recipient\cf4 \strokec4  \cf2 \strokec2 in\cf4 \strokec4  \cf0 \strokec6 (\cf5 \strokec5 Ox\cf0 \strokec6 )\cb1 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 subject\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4   \cf10 \strokec10 "turkey"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 distinct\cf4 \strokec4  \cf9 \strokec9 recipient\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 count\cf4 \strokec4  \cf0 \cb1 \strokec6 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //How many Oxford employees received emails with the term "turkey" in the subject?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 Email\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 recipient\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "@go-oxford-owls.edu"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 subject\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "turkey"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 distinct\cf4 \strokec4  \cf9 \strokec9 recipient\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 count\cf4 \strokec4  \cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //553\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //How many unique websites did Patrick Stump visit?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  \cf5 \strokec5 stump\cf4 \strokec4  \cf0 \strokec6 =\cf4 \strokec4  \cf7 \strokec7 Employees\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 name\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "Patrick Stump"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 project\cf4 \strokec4  \cf9 \strokec9 ip_addr\cf0 \strokec6 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 OutboundNetworkEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 src_ip\cf4 \strokec4  \cf2 \strokec2 in\cf4 \strokec4  \cf0 \strokec6 (\cf5 \strokec5 stump\cf0 \strokec6 )\cb1 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 distinct\cf4 \strokec4  \cf9 \strokec9 url\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 count\cf4 \strokec4  \cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //34\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //How many distinct domains in the PassiveDns records contain the word "owls"?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 PassiveDns\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 domain\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "owls"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 distinct\cf4 \strokec4  \cf9 \strokec9 domain\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 count\cf4 \strokec4  \cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //5\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //What is Tac Zaylor's email address?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3 \strokec4  \cf7 \strokec7 Employees\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 name\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "Tac Zaylor"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 // tac_zaylor@go-oxford-owls.edu, Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.185 Safari/537.36, 10.10.0.13, FUXH-MACHINE\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //| project email_addr\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //How many email were sent to Tac Zaylor from a go-oxford-owls.edu email?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 Email\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 recipient\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "tac_zaylor@go-oxford-owls.edu"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 sender\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "@go-oxford-owls.edu"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 count\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //10\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //How many of these emails came from those with a student role?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 Email\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 recipient\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "tac_zaylor@go-oxford-owls.edu"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 sender\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "@go-oxford-owls.edu"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 join\cf4 \strokec4  \cf7 \strokec7 Employees\cf4 \strokec4  \cf2 \strokec2 on\cf4 \strokec4  \cf0 \strokec6 $left.\cf9 \strokec9 sender\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf0 \strokec6 $right.\cf9 \strokec9 email_addr\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 project\cf4 \strokec4  \cf9 \strokec9 role\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 role\cf4 \strokec4  \cf0 \strokec6 =~\cf4 \strokec4  \cf10 \strokec10 "student"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 count\cf4 \strokec4  \cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //2\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //Review the emails from these student accounts for the one sent on November 15, 2024 containing an inquiry for help from the assistant coach.\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 Email\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 recipient\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "tac_zaylor@go-oxford-owls.edu"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 sender\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "@go-oxford-owls.edu"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 join\cf4 \strokec4  \cf12 \strokec12 kind\cf0 \strokec6 =\cf2 \strokec2 inner\cf4 \strokec4   \cf7 \strokec7 Employees\cf4 \strokec4  \cf2 \strokec2 on\cf4 \strokec4  \cf0 \strokec6 $left.\cf9 \strokec9 sender\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf0 \strokec6 $right.\cf9 \strokec9 email_addr\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 role\cf4 \strokec4  \cf0 \strokec6 =~\cf4 \strokec4  \cf10 \strokec10 "student"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //What was the subject line of this email?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //[EXTERNAL] Urgent Help Required: Coach, I need help accessing the playbook\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //Who sent this email?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //brover_pham@go-oxford-owls.edu\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //What is the device hostname used by this student?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 Employees\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 email_addr\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "brover_pham@go-oxford-owls.edu"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 // Brover Pham, 10.10.0.2, brpham, S1VX-MACHINE, Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //What is the name of the file downloaded from the email?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //Help_with_Playbook-Heres_What_I_tried.pdf\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //It looks like another staff member was targetted by the same email.\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //Who is the other recipient? Enter their email address\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 Email\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 subject\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "Urgent Help Required: Coach, I need help accessing the playbook"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 distinct\cf4 \strokec4  \cf9 \strokec9 recipient\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //dill_delichick@go-oxford-owls.edu\cf0 \cb1 \strokec6 \
+\
+\
+\
+\cf11 \cb3 \strokec11 //Did the user found in Question 8 also download the file? yes/no\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  \cf5 \strokec5 dill\cf4 \strokec4  \cf0 \strokec6 =\cf4 \strokec4  \cf7 \strokec7 Employees\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 email_addr\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "dill_delichick@go-oxford-owls.edu"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 project\cf4 \strokec4  \cf9 \strokec9 ip_addr\cf0 \strokec6 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 OutboundNetworkEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 src_ip\cf4 \strokec4  \cf2 \strokec2 in\cf4 \strokec4  \cf0 \strokec6 (\cf5 \strokec5 dill\cf0 \strokec6 )\cb1 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 url\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "Help_with_Playbook-Heres_What_I_tried.pdf"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //no\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //Did the user found in Question 8 also download the file? yes/no\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  \cf5 \strokec5 dill\cf4 \strokec4  \cf0 \strokec6 =\cf4 \strokec4  \cf7 \strokec7 Employees\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 email_addr\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "dill_delichick@go-oxford-owls.edu"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 project\cf4 \strokec4  \cf9 \strokec9 ip_addr\cf0 \strokec6 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 OutboundNetworkEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 src_ip\cf4 \strokec4  \cf2 \strokec2 in\cf4 \strokec4  \cf0 \strokec6 (\cf5 \strokec5 dill\cf0 \strokec6 )\cb1 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 url\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "Help_with_Playbook-Heres_What_I_tried.pdf"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //no\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //When did Coach Zaylor download the aforementioned file from Question 7?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  \cf5 \strokec5 Zay\cf4 \strokec4  \cf0 \strokec6 =\cf4 \strokec4  \cf7 \strokec7 Employees\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 email_addr\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "tac_zaylor@go-oxford-owls.edu"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 project\cf4 \strokec4  \cf9 \strokec9 hostname\cf0 \strokec6 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 FileCreationEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 hostname\cf4 \strokec4   \cf2 \strokec2 in\cf4 \strokec4  \cf0 \strokec6 (\cf5 \strokec5 Zay\cf0 \strokec6 )\cb1 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 filename\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "Help_with_Playbook-Heres_What_I_tried.pdf"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //2024-11-15 14:04:36.0000\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //Shortly after Coach Zaylor downloaded the file, malicious content began executing.\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //What is the name of the file created?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  \cf5 \strokec5 Zay\cf4 \strokec4  \cf0 \strokec6 =\cf4 \strokec4  \cf7 \strokec7 Employees\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 email_addr\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "tac_zaylor@go-oxford-owls.edu"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 project\cf4 \strokec4  \cf9 \strokec9 hostname\cf0 \strokec6 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 FileCreationEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 hostname\cf4 \strokec4   \cf2 \strokec2 in\cf4 \strokec4  \cf0 \strokec6 (\cf5 \strokec5 Zay\cf0 \strokec6 )\cb1 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 timestamp\cf4 \strokec4  \cf0 \strokec6 >=\cf4 \strokec4  \cf2 \strokec2 datetime\cf0 \strokec6 (2024-11-15 14:04:36.0000)\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //disaintcobaltstrike.exe\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //What is the SHA256 of the file from question 9?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //cdb82be1b9dd6391ed068124cfdf2339d71dd70f6f76462a7e4a0fdadd5a208a\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //What is the real name for this type of application that is widely used as a penetration testing tool?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //Cobalt Strike\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //It looks like an external connection has been established using this application.\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //What is the IP being used for the C2 server?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 ProcessEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 timestamp\cf4 \strokec4  \cf0 \strokec6 >=\cf4 \strokec4  \cf2 \strokec2 datetime\cf0 \strokec6 (2024-11-15 14:05:18.0000)\cb1 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 hostname\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "FUXH-MACHINE"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 process_commandline\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "cobaltstrike"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //66.159.94.55:56789\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //How many unique domains appear in PassiveDns using this IP address?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 PassiveDns\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 ip\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "66.159.94.55"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 distinct\cf4 \strokec4  \cf9 \strokec9 domain\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 count\cf4 \strokec4  \cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //4\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //oxfordacademyfo0tball.com, oxfordacademy-bestatfootball.com, 0xfordacademyf00tball.org, oxfordacademyfutball.com\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //What is the term used for this type of attack being used by the attacker?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //website spoofing\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //How many inbound network events occured with the IP address mentioned in Question 12?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 InboundNetworkEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 src_ip\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "66.159.94.55"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 count\cf4 \strokec4  \cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //44\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //What is the referrer used by the IP address seen in Question 12 using an .edu TLD (top-level domain) not from Oxford Academy?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 InboundNetworkEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 src_ip\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "66.159.94.55"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 referrer\cf4 \strokec4  \cf2 \strokec2 !contains\cf4 \strokec4  \cf10 \strokec10 "oxfordacademy"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 referrer\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 ".edu"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //https://intranet.sierravistahigh.edu\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //Sierra Vista High was the team Oxford Academy played against in the Turkey Bowl! It looks like someone using this domain performed reconnaissance on Oxford Academy. These same search results are also being used by the other referrer that appears.\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //What is the URL of the referrer that is not using the .edu TLD?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 InboundNetworkEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 src_ip\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "66.159.94.55"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 summarize\cf4 \strokec4  \cf9 \strokec9 result\cf4 \strokec4  \cf0 \strokec6 =\cf4 \strokec4  \cf2 \strokec2 count\cf0 \strokec6 ()\cf2 \strokec2 by\cf4 \strokec4  \cf9 \strokec9 referrer\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //https://recon.grandtheftautumn.com\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //Based on what we can see within the URL section, the attacker was gathering as much data as possible on Oxford Academy. The Cyber Kill Chain outlines the various stages of several common cyberattacks.\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //Which step of the Cyber Kill Chain does this fall under?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //Reconnaissance\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //What command did the attackers use first to perform their initial recon after gaining access to the Oxford network using Coach Tac Zaylor's credentials?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 ProcessEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 timestamp\cf4 \strokec4  \cf0 \strokec6 >=\cf4 \strokec4  \cf2 \strokec2 datetime\cf0 \strokec6 (2024-11-15 14:05:18.0000)\cb1 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 hostname\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "FUXH-MACHINE"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //whoami\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //Which netstat flag did the attackers use?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 ProcessEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 timestamp\cf4 \strokec4  \cf0 \strokec6 >=\cf4 \strokec4  \cf2 \strokec2 datetime\cf0 \strokec6 (2024-11-15 14:05:18.0000)\cb1 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 hostname\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "FUXH-MACHINE"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 process_commandline\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "netstat"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //-ano, 2024-11-18 14:54:09.0000\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //What other file was downloaded besides the .pdf file?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 FileCreationEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 timestamp\cf4 \strokec4  \cf0 \strokec6 >=\cf4 \strokec4  \cf2 \strokec2 datetime\cf0 \strokec6 (2024-11-15 14:04:36.0000)\cb1 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 hostname\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "FUXH-MACHINE"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 path\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "\\\\Downloads"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //Advanced_IP_Scanner_2.5.3850.exe\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //What URL did the attacker use to download that second file?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  \cf5 \strokec5 Zay\cf4 \strokec4  \cf0 \strokec6 =\cf4 \strokec4  \cf7 \strokec7 Employees\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 email_addr\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "tac_zaylor@go-oxford-owls.edu"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 project\cf4 \strokec4  \cf9 \strokec9 ip_addr\cf0 \strokec6 ;\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 OutboundNetworkEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 url\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "Advanced_IP_Scanner_2.5.3850.exe"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //https://0xfordacademyf00tball.org/tools/Advanced_IP_Scanner_2.5.3850.exe\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //It looks like multiple commands were ran with the application found in Question 3.\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //What is the name of the output file created?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 ProcessEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 hostname\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "FUXH-MACHINE"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 process_commandline\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "Advanced_IP_Scanner"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //network_scan.txt\cf0 \cb1 \strokec6 \
+\
+\
+\
+\cf11 \cb3 \strokec11 //What tool did the attacker use to gain access to the cloud platform?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 ProcessEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 hostname\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "FUXH-MACHINE"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 timestamp\cf4 \strokec4  \cf0 \strokec6 >=\cf4 \strokec4  \cf2 \strokec2 datetime\cf0 \strokec6 (2024-11-27 15:16:40.0000)\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //mimikatz.exe\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //What is the password used to access the cloud platform?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //0wlsRdaBest3st\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //When did the attacker use the password to log into the cloud platform?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 ProcessEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //| where hostname == "FUXH-MACHINE"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 timestamp\cf4 \strokec4  \cf0 \strokec6 >=\cf4 \strokec4  \cf2 \strokec2 datetime\cf0 \strokec6 (2024-11-27 15:16:40.0000)\cb1 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 process_commandline\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "0wlsRdaBest3st"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //2024-11-27 15:30:11.0000\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //A command was run to create copies of all files with the .docx, .pdf, and .xlxs extensions!//\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //What is the name of the executable that was used perform this action on the files found in the network share?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  \cf5 \strokec5 filetypes\cf4 \strokec4  \cf0 \strokec6 =\cf4 \strokec4  \cf2 \strokec2 dynamic\cf0 \strokec6 ([\cf10 \strokec10 ".docx"\cf4 \strokec4  \cf0 \strokec6 ,\cf4 \strokec4  \cf10 \strokec10 ".pdf"\cf4 \strokec4  \cf0 \strokec6 ,\cf4 \strokec4  \cf10 \strokec10 ".xlxs"\cf0 \strokec6 ]);\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 ProcessEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 hostname\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "FUXH-MACHINE"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 timestamp\cf4 \strokec4  \cf0 \strokec6 >=\cf4 \strokec4  \cf2 \strokec2 datetime\cf0 \strokec6 (2024-11-27 15:16:40.0000)\cb1 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 process_commandline\cf4 \strokec4  \cf2 \strokec2 has\cf4 \strokec4  \cf10 \strokec10 "copy"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //rclone.exe copy \\\\footballshare\\playbook C:\\Users\\tazaylor\\Documents\\local_copy_of_playbook --include *.docx --include *.pdf --include *.xlsx\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //What username was used to exfiltrate the local copy of the playbook created by the attacker?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 ProcessEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 hostname\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "FUXH-MACHINE"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 timestamp\cf4 \strokec4  \cf0 \strokec6 >=\cf4 \strokec4  \cf2 \strokec2 datetime\cf0 \strokec6 (2024-11-27 15:16:40.0000)\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //GTA-fvreenivfgn\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //This username looks like its been encrypted with a cipher. Let's use tools available to us to determine their true identity! \uc0\u55358 \u56809 \cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //What is their real username after performing a decipher?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //Using Cyberchef and the ROT-13 recipe on the 2nd part of the text i got:\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //GTA-sierravista\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //What type of cipher was used?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //ROT13\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //What is the password the attacker used within their environment to log into their account?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //ItsFallYall\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //What is the MITRE ATT&CK ID of this attack?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //T1537\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //It looks like the attacker also downloaded a word file onto Coach Tac Zaylor's host machine. \uc0\u55357 \u56526 \cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //What is the name of the file?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 FileCreationEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 hostname\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "FUXH-MACHINE"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 timestamp\cf4 \strokec4  \cf0 \strokec6 >=\cf4 \strokec4  \cf2 \strokec2 datetime\cf0 \strokec6 (2024-11-27 15:16:40.0000)\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //fake_plays.docx\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //What command was used on this file after it was downloaded onto the host machine?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 ProcessEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 hostname\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "FUXH-MACHINE"\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 process_commandline\cf4 \strokec4  \cf2 \strokec2 contains\cf4 \strokec4  \cf10 \strokec10 "fake_plays.docx"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //ren\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //What is the name of the file after using the previously mentioned command from Question 18?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //oxford_owls_winning_playbok.docx\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //What directory did the attacker place this file in after performing the last action on it?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 ProcessEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 timestamp\cf4 \strokec4  \cf0 \strokec6 >=\cf4 \strokec4  \cf2 \strokec2 datetime\cf0 \strokec6 (2024-11-27 15:37:16.0000)\cf4 \strokec4  \cf11 \strokec11 // time when the renaming happened\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 hostname\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "FUXH-MACHINE"\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //C:\\Playbooks\\\cf0 \cb1 \strokec6 \
+\
+\cf11 \cb3 \strokec11 //Oh no! After performing a review, we can see that the archive server was wiped cleaned, deleting all backup files of the playbook! \uc0\u55357 \u56785 \cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //What was the command used to perform this action?\cf0 \cb1 \strokec6 \
+\cf11 \cb3 \strokec11 //del \\\\archive_server\\football_team\\playbooks /Q /F\cf0 \cb1 \strokec6 \
+\
+\
+\cf11 \cb3 \strokec11 //What was the full name of the group that hacked Oxford Academy?\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 InboundNetworkEvents\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 |\cf4 \strokec4  \cf8 \strokec8 where\cf4 \strokec4  \cf9 \strokec9 src_ip\cf4 \strokec4  \cf0 \strokec6 ==\cf4 \strokec4  \cf10 \strokec10 "66.159.94.55"\cf4 \strokec4  \cf11 \strokec11 // earlier IP from rouge domains\cf0 \cb1 \strokec6 \
+\cb3 |\cf4 \strokec4  \cf8 \strokec8 distinct\cf4 \strokec4  \cf9 \strokec9 referrer\cf0 \cb1 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb3 \strokec11 //https://recon.grandtheftautumn.com  //Grand Theft Autumn\cf0 \cb1 \strokec6 \
+}
